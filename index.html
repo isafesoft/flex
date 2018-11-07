@@ -18,14 +18,22 @@
             padding: 20px;
             margin: 20px;
             border: 1px solid darkorange;
-            width: 90px;
             height: 40px;
         }
 
         #main:nth-child(1) {order: 3;
-            flex-grow: 1;}
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
         #main:nth-child(2) {order: 1;
-        flex-grow: 2}
+        flex-grow: 2;
+            flex-shrink: 1;}
+        #main:nth-child(3) {order: 2;
+            flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: 70px;
+        }
     </style>
 </head>
 <body>
