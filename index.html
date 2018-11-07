@@ -11,8 +11,6 @@
             flex-direction: row;
             flex-wrap: wrap-reverse;
             */
-            flex-flow: row wrap;
-            justify-content: center;
         }
 
         #main {
@@ -23,6 +21,11 @@
             width: 90px;
             height: 40px;
         }
+
+        #main:nth-child(1) {order: 3;
+            flex-grow: 1;}
+        #main:nth-child(2) {order: 1;
+        flex-grow: 2}
     </style>
 </head>
 <body>
@@ -30,7 +33,6 @@
     <div id="main">1</div>
     <div id="main">2</div>
     <div id="main">3</div>
-    <div id="main">4</div>
 </div>
 </body>
 </html>
