@@ -3,34 +3,37 @@
 <head>
     <title>Title</title>
     <style>
-        #container {
-            display: flex;
-            background-color: purple;
-            height: 400px;
-            /*
-            flex-direction: row;
-            flex-wrap: wrap-reverse;
-            */
-            flex-flow: row wrap;
-            justify-content: center;
+        header, footer {
+            background-color: cadetblue;
+            height: 15vh
         }
 
-        #main {
-            background-color: burlywood;
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid darkorange;
-            width: 90px;
-            height: 40px;
+        .container {
+            display: flex;
+            flex-direction: row;
         }
+
+        nav, aside {
+            height: 70vh;
+            background-color: darkgray;
+            flex: 1;
+        }
+
+        article {
+            height: 70vh;
+            background-color: aliceblue;
+            flex: 4;
+        }
+
     </style>
 </head>
 <body>
-<div id="container">
-    <div id="main">1</div>
-    <div id="main">2</div>
-    <div id="main">3</div>
-    <div id="main">4</div>
-</div>
+    <header></header>
+    <div class="container">
+        <nav></nav>
+        <article></article>
+        <aside></aside>
+    </div>
+    <footer></footer>
 </body>
 </html>
