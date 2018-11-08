@@ -7,6 +7,41 @@
             background-color: cadetblue;
             height: 15vh
         }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+            height: 90px;
+        }
+
+        .face {
+            display: flex;
+            margin-right: 50px;
+            align-items: center;
+        }
+
+        .face_image {
+            flex: 1;
+        }
+
+        .face_text {
+            flex: 3;
+        }
+
+        .logo img {
+            width: 90px;
+            height: 90px;
+        }
+
+        .face_image img {
+            width: 40px;
+            height: 40px;
+        }
 
         .container {
             display: flex;
@@ -19,21 +54,93 @@
             flex: 1;
         }
 
+        aside{
+            display: flex;
+            justify-content: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: lightgreen;
+            padding: 5px;
+        }
+
+        li {
+            padding: 10px;
+        }
         article {
             height: 70vh;
             background-color: aliceblue;
             flex: 4;
+            display: flex;
+        }
+
+        .main{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .main_image {
+            flex: 1;
+            margin: 40px;
+            width: 130px;
+        }
+
+        .main_text {
+            flex: 1;
+            margin: 20px 50px;
+        }
+
+        footer {
+            display: flex;
+            margin: 20px;
+            justify-content: space-between;
+            align-items: center;
         }
 
     </style>
 </head>
 <body>
-    <header></header>
+<div class="main">
+
+    <header>
+        <div class="logo"><img src="robot.png" alt=""></div>
+        <div class="face">
+            <div class="face_image"><img src="robot.png" alt=""></div>
+            <div class="face_text">text</div>
+        </div>
+    </header>
     <div class="container">
-        <nav></nav>
-        <article></article>
-        <aside></aside>
+        <nav>
+            <ul>
+                <li>Menu1</li>
+                <li>Menu2</li>
+                <li>Menu3</li>
+            </ul>
+        </nav>
+        <article>
+            <div class="main_image"><img src="robot.png" alt=""></div>
+            <div class="main_text"><h3>Body Text</h3><p>some text here</p></div>
+        </article>
+        <aside>
+            <div class="aside_text">
+                <h4>Latest News</h4>
+                <a href="#">flash briefing</a>
+            </div>
+        </aside>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="footer_left">
+            <p>@2018</p>
+        </div>
+        <div class="footer_right">right</div>
+    </footer>
+</div>
+
 </body>
 </html>
