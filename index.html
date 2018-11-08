@@ -11,30 +11,20 @@
             display: flex;
             height: 85vh;
             background-color: purple;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 1px;
         }
 
         .flex_item {
             flex: 1;
             height: 200px;
             background-color: lightsalmon;
+            flex-basis: 600px;
         }
 
         .flex_item:nth-child(1) {
             background-color: tomato;
-        }
-        
-        @media (max-width: 1000px) {
-           .container {
-               flex-direction: column;
-           }
-
-            .flex_item:nth-child(1) {
-                flex: 3;
-            }
-
-            .flex_item:nth-child(2) {
-                flex: 1;
-            }
         }
 
     </style>
