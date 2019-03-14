@@ -7,61 +7,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive-form-with flexbox</title>
     <style>
-        .main_form {
+        .container {
             display: flex;
-            background-color: lightblue;
-            width: 70%;
-            height: 300px;
-            margin: 0 auto;
-            padding: 20px;
         }
 
-        .contact {
-            flex: 1;
-            margin-left: 30px;
-            background-color: coral;
-            margin-right: 30px;
+        .main {
+            width: 25vw;
+            height: 100vh;
+            text-align: center;
+            background-position: center; /* center the picture*/
+            background-repeat: no-repeat;
+            background-size: cover; /* let the picture show wholely */: width:;
+            transition: 1s;
         }
 
-        .contact input {
-            width: 90%;
-            padding: 10px;
-            margin-right: 50px;
-            margin-bottom: 30px;
+        .main:nth-child(1) {
+            background-image: url("paris.jpg");
+        }
+        .main:nth-child(2) {
+            background-image: url("london.jpg");
+        }
+        .main:nth-child(3) {
+            background-image: url("greatwall.jpeg");
         }
 
-        .contact button {
-            background-color: darkgray;
+        .main:nth-child(4) {
+            background-image: url("freedom.jpg");
+        }
+
+        h3 {
+            line-height: 100vh;
+            margin: 0;
+            background: rgba(214, 145, 45, 0.3);
             color: white;
-            padding: 15px;
+            font-family: Papyrus;
+            font-size: 15px;
+            letter-spacing: 4px;
+            transition: 1s;
         }
 
-        .text_message {
-            display: flex;
-            flex-direction: column;
-            flex: 2;
-            margin-bottom: 50px;
+        h3:hover{
+            background: rgba(0, 0, 0, 0.1);
         }
 
-        .text_message textarea {
-            flex: 1;
+        .main:hover {
+            width: 50vw;
+            transition: 1s;
         }
-
     </style>
 </head>
 <body>
-<form action="" class="main_form">
-    <div class="contact">
-        <label for="name">Name</label>
-        <input type="text" id="name">
-        <label for="email">Email</label>
-        <input type="text" id="email">
-        <button>Submit</button>
-    </div>
-    <div class="text_message">
-        <label for="msg">Messsage:</label>
-        <textarea name="" id="msg" cols="30" rows="10">Write some message</textarea>
-    </div>
-</form>
+<div class="container">
+    <div class="main"><h3>Paris</h3></div>
+    <div class="main"><h3>London</h3></div>
+    <div class="main"><h3>New York</h3></div>
+    <div class="main"><h3>Beijing</h3></div>
+</div>
 </body>
 </html>
