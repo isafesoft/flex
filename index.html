@@ -3,25 +3,46 @@
 <head>
     <title>Title</title>
     <style>
+        header {
+            height: 15vh;
+            background-color: lightgreen;
+        }
         .container {
             display: flex;
+            height: 85vh;
             background-color: purple;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 1px;
         }
 
         .flex_item {
+            flex: 1;
+            height: 200px;
+            background-color: lightsalmon;
+            flex-basis: 600px;
+        }
 
+        .flex_item:nth-child(1) {
+            background-color: tomato;
         }
 
     </style>
 </head>
 <body>
+<header>Header</header>
 <div class="container">
-    <div class="flex_item">1</div>
-    <div class="flex_item">2</div>
-    <div class="flex_item">3</div>
-    <div class="flex_item">4</div>
-    <div class="flex_item">5</div>
-    <div class="flex_item">6</div>
+    <div class="flex_item"><p>
+        Google Company Culture
+        Google is a high-energy, fast-paced work environment. While the dress code might be “casual” the company attracts and retains some of the brightest minds in the technology industry. There is a work hard, play hard atmosphere. The Google Mountain View, CA headquarters (aka “the Googleplex”) is a campus-like environment. There are workout facilities, a café, well-stocked snack rooms, and a dorm like environment. View the Google Office Descriptions for more details.
+
+        In my opinion, one of the coolest programs at Google is the 20% time program. All Engineers at Google are encouraged to spend 20% of their work time on projects that interest them. Not only does this keep Engineers happy and challenged, but its also good business: some estimates put half of all new product launches can be directly attributed to projects that came from the 20% time program.
+    </p></div>
+    <div class="flex_item">
+        <p>
+            In the United States, Google has offices in several states, including California, Illinois, Massachusetts, Arizona, Michigan, New York, Texas, North Carolina, Oklahoma, South Carolina, Pennsylvania, Oregon, Washington (Seattle) and Washington, DC.
+        </p>
+    </div>
 </div>
 </body>
 </html>
